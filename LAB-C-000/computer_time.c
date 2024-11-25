@@ -1,9 +1,5 @@
 #include<stdio.h>
 
-
-
-
-
 int main() {
     int computer_time = 785;  // minutes
 
