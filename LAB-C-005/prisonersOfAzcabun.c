@@ -26,8 +26,9 @@ int main()
 	// Select prisoner to be killed
 	for (int i = 0; i < numPrisoners; i++) {
 		int n_Steps = m;
-			if(i >= 1)
-				n_Steps = ((killed[0] * 2) - killed[0]) % numPrisoners;  // imagine having to do this because you cant use static
+		
+		if(i >= 1)
+			n_Steps = ((killed[0] * 2) - killed[0]) % numPrisoners;  // imagine having to do this because you cant use static
 
 		if(i == 0)
 			m -= 1;
