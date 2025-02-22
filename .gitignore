@@ -161,6 +161,9 @@ cython_debug/
 # general standard text files and test dir
 .txt
 .temp
+file.out
+temp.temp
+lab_A.c
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
