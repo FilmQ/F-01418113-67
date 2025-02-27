@@ -13,37 +13,6 @@ struct Node* d_deleteNode(struct Node* head, int value_toDelete);
 
 int main()
 {
-    // test
-    /*
-    struct Node* head = NULL;
-    struct Node *strayNode = (struct Node*) malloc(sizeof(struct Node));
-    strayNode->data = 80;
-    strayNode->next = NULL;
-    head = strayNode;
-    strayNode = (struct Node*) malloc(sizeof(struct Node));
-    strayNode->data = 20;
-    strayNode->next = NULL;
-    head->next = strayNode;
-    strayNode = (struct Node*) malloc(sizeof(struct Node));
-    strayNode->data = 20;
-    strayNode->next = NULL;
-    head->next->next = strayNode;
-    strayNode = (struct Node*) malloc(sizeof(struct Node));
-    strayNode->data = 80;
-    strayNode->next = NULL;
-    head->next->next->next = strayNode;
-
-    p_printNode(head);
-    head = d_deleteNode(head, 80);
-    head = d_deleteNode(head, 20);
-    head = i_insertNode(head, 1);
-    head = i_insertNode(head, 2);
-    head = i_insertNode(head, 3);
-    head = i_insertNode(head, 0);
-    head = i_insertNode(head, 2);
-    p_printNode(head);
-    */
-
     char char_operator = ' ';
     char BUFFER[32];
     int value = 0;
