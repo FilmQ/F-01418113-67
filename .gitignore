@@ -164,6 +164,7 @@ cython_debug/
 file.out
 temp.temp
 lab_A.c
+lecture.cpp
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
