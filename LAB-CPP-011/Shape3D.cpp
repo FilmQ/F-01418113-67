@@ -1,3 +1,4 @@
+#include <any>
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -32,10 +33,13 @@ class RightRectangularPyramid : public Shape3D
             this->height = 0;
         }
 
-        double volumn()      { return (width * length * height) / 3; }
-        double surfaceArea() { return   width * length + 
-                                       (length * sqrt(pow(width/2, 2)  + pow(height, 2)) +
-                                        width  * sqrt(pow(length/2, 2) + pow(height, 2))); }
+        double volumn()      { return  (width * length * height) / 3; }
+        double surfaceArea() { return  (width * length) + 
+                                       (
+                                        length * sqrt(pow( width/2, 2) + pow(height, 2)) +
+                                         width * sqrt(pow(length/2, 2) + pow(height, 2))
+                                       ); 
+                             }
 };
 
 class Sphere : public Shape3D
@@ -99,5 +103,16 @@ int main()
         cout << rectangle->surfaceArea();
 	}
 }
+ 
+class a
+{
+    public:
+        void hello() {}
+};
+
+class b : public a
+{
+    void hello() { std::cout << "fjkdsja"; }
+};
 
 
